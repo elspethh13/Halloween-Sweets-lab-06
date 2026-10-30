@@ -154,11 +154,40 @@ ggplot(candy_df, aes(x = winpercent,
 Create a visualization that examines the relationship between a candy’s win percentage and whether it contains chocolate. Include x and y labels and a title. Describe any relationship you see.
 
 ```{r}
-# your code here
+ggplot(candy_df, aes(x = winpercent,
+                     fill = chocolate)) +
+  geom_histogram() +
+  labs(title = "Winpercent with and without chocolate",
+       x = "Winpercent of candy bars",
+       y = "Frequency")
+```
+
+- Consider the similar pair by replacing chocolate with caramel, fruity and compare their results.
+
+Caramel
+```{r}
+ggplot(candy_df, aes(x = winpercent,
+                     fill = caramel)) +
+  geom_histogram() +
+  labs(title = "Winpercent with and without caramel",
+       x = "Winpercent of candy bars",
+       y = "Frequency")
 
 ```
 
-- Consider the similar pair by replacing chocolate with caramel, fruity and compare their results. 
+Fruity
+```{r}
+ggplot(candy_df, aes(x = winpercent,
+                     fill = fruity)) +
+  geom_histogram() +
+  labs(title = "Winpercent with and without fruity",
+       x = "Winpercent of candy bars",
+       y = "Frequency")
+
+```
+
+_Bars with chocolate often had a higher win percentage showing they were more likely to win, whether a candy bar had caramel or not it had no effect on the win percentage, and a bar being fruity meant it was less likely to win and had a lower win percentage_
+
 - Also include summary statistics details for this discussion by using the calculation below: 
 
 ```{r}
@@ -170,7 +199,7 @@ candy_rankings %>%
     median_win = median(winpercent)
   )
 ```
-
+_The mean win for candy containing chocolate was 61 while for a candy not containing chocolate it was 42 showing that a candy bar was more likely to win if it contained chocolate, the median agreed with this theory as well._
 
 ## Exercise 6
 
