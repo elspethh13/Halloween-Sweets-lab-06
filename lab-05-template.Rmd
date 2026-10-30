@@ -138,10 +138,11 @@ How about using the both variables; chocolate vs winpercent? Run the following i
 Fill in the blanks, remove the # symbol in front of your code and the execute the code chunk via green play button.
 
 ```{r}
-# Your code here
-#ggplot(candy_df, aes(x = ___________)) +
-#  geom_histogram() +
-#  facet_wrap(___________)
+
+ggplot(candy_df, aes(x = winpercent,
+                     fill = caramel)) +
+  geom_histogram() +
+  facet_wrap(~ chocolate)
 
 ```
 
