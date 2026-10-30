@@ -99,8 +99,20 @@ candy_df <- candy_df %>%
 Complete the following code to get the data viz to represent "how many candies contain caramel via bar plot". Fill in the blanks, remove the # symbol in front of your code and the execute the code chunk via green play button.
 
 ```{r}
-# ggplot(candy_rankings, aes(x = ______)) +
-#  _____() +
+ ggplot(candy_rankings, aes(x = caramel)) +
+ geom_bar() +
+  labs(title = "Candy containing caramel",
+      x = "Contains caramel",
+      y = "Number of candies")
+```
+
+_There are many more candy bars that don't contain caramel than do._
+```{r}
+ ggplot(candy_rankings, aes(x = chocolate)) +
+ geom_bar() +
+  labs(title = "Candy containing chocolate",
+      x = "Contains chocolate",
+      y = "Number of candies")
 ```
 
 ## Exercise 3
