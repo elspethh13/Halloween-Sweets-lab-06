@@ -120,8 +120,12 @@ _There are many more candy bars that don't contain caramel than do._
 Now look at a numerical variable, such as `winpercent`. Create an histogram for this variable using ggplot2 functions below. Include informative x and y labels and a title, as a good practice.
 
 ```{r}
-# Your code here
-
+ggplot(candy_rankings,
+       aes(x = winpercent)) +
+  geom_histogram() +
+  labs(title = "Winpercent of different candies",
+       x = "Winpercent",
+       y = "Frequency")
 ```
 
 
