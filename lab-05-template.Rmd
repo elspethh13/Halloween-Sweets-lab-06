@@ -21,7 +21,7 @@ library(ggplot2)
 knitr::include_graphics("img/Speaking-the-world.jpg")
 ```
 
-_Write your comments about image 1 below_
+_This data doesn't respect the mathematics as the lines are not to scale and the top line is wider than the others._
 
 
 
@@ -32,7 +32,7 @@ _Write your comments about image 1 below_
 knitr::include_graphics("img/rose-pop-density-total-area-bw.jpg")
 ```
 
-_Write your comments about image 2 below_
+_The data is difficult to read as there are no specific numbers and it's unclear what is represnting population density and total area, this is the wrong plot to show this data. It doesn't respect the data or the people._
 
 
 
@@ -43,7 +43,7 @@ _Write your comments about image 2 below_
 knitr::include_graphics("img/life-expectancy-rule-of-law.png")
 ```
 
-_Write your comments about image 3 below_
+_The correlation of this data is easy to see, but it is difficult to see information about specific countries, and there is no key for the colours, there is also no title. This plot doesn't respect the people and the data._
 
 
 
@@ -54,7 +54,7 @@ _Write your comments about image 3 below_
 knitr::include_graphics("img/global-income-dist.PNG")
 ```
 
-_Write your comments about image 4 below_
+_The data is difficult to read and not inclusive, this isn't an appropiate visualisation and the y axis is badly labelled making it difficult to the size of the population. This plot doesn't respect the people or the data._
 
 
 
